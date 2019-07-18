@@ -1,0 +1,684 @@
+@inproceedings{hausman2018learning,
+    title={Learning an Embedding Space for Transferable Robot Skills},
+    author={K. Hausman and J.T. Springenberg and Z. Wang and N. Heess and M. Riedmiller},
+    booktitle={ICLR},
+    year={2018},
+    url={https://openreview.net/forum?id=rk07ZXZRb},
+}
+
+@inproceedings{julian2018scaling,
+  title={Scaling simulation-to-real transfer by learning composable robot skills},
+  author={Julian, Ryan C and Heiden, Eric and He, Zhanpeng and Zhang, Hejia and Schaal, Stefan, and Lim, Joseph and Sukhatme, Gaurav S and Hausman, Karol},
+  booktitle={International Symposium on Experimental Robotics},
+  year={2018},
+  organization={Springer},
+  url={https://ryanjulian.me/iser_2018.pdf},
+}
+
+@ARTICLE{coreyes2018self,
+  title         = "{Self-Consistent} Trajectory Autoencoder: Hierarchical
+                   Reinforcement Learning with Trajectory Embeddings",
+  author        = "Co-Reyes, John D and Liu, Yuxuan and Gupta, Abhishek and
+                   Eysenbach, Benjamin and Abbeel, Pieter and Levine, Sergey",
+  abstract      = "In this work, we take a representation learning perspective
+                   on hierarchical reinforcement learning, where the problem of
+                   learning lower layers in a hierarchy is transformed into the
+                   problem of learning trajectory-level generative models. We
+                   show that we can learn continuous latent representations of
+                   trajectories, which are effective in solving temporally
+                   extended and multi-stage problems. Our proposed model,
+                   SeCTAR, draws inspiration from variational autoencoders, and
+                   learns latent representations of trajectories. A key
+                   component of this method is to learn both a
+                   latent-conditioned policy and a latent-conditioned model
+                   which are consistent with each other. Given the same latent,
+                   the policy generates a trajectory which should match the
+                   trajectory predicted by the model. This model provides a
+                   built-in prediction mechanism, by predicting the outcome of
+                   closed loop policy behavior. We propose a novel algorithm
+                   for performing hierarchical RL with this model, combining
+                   model-based planning in the learned latent space with an
+                   unsupervised exploration objective. We show that our model
+                   is effective at reasoning over long horizons with sparse
+                   rewards for several simulated tasks, outperforming standard
+                   reinforcement learning methods and prior methods for
+                   hierarchical reasoning, model-based planning, and
+                   exploration.",
+  month         =  {jun},
+  year          =  {2018},
+  url           = "http://arxiv.org/abs/1806.02813",
+  archivePrefix = "arXiv",
+  eprint        = "1806.02813",
+  primaryClass  = "cs.LG",
+  arxivid       = "1806.02813"
+}
+
+
+@ARTICLE{eysenbach2018diversity,
+  title         = "Diversity is All You Need: Learning Skills without a Reward
+                   Function",
+  author        = "Eysenbach, Benjamin and Gupta, Abhishek and Ibarz, Julian
+                   and Levine, Sergey",
+  abstract      = "Intelligent creatures can explore their environments and
+                   learn useful skills without supervision. In this paper, we
+                   propose DIAYN ('Diversity is All You Need'), a method for
+                   learning useful skills without a reward function. Our
+                   proposed method learns skills by maximizing an information
+                   theoretic objective using a maximum entropy policy. On a
+                   variety of simulated robotic tasks, we show that this simple
+                   objective results in the unsupervised emergence of diverse
+                   skills, such as walking and jumping. In a number of
+                   reinforcement learning benchmark environments, our method is
+                   able to learn a skill that solves the benchmark task despite
+                   never receiving the true task reward. We show how pretrained
+                   skills can provide a good parameter initialization for
+                   downstream tasks, and can be composed hierarchically to
+                   solve complex, sparse reward tasks. Our results suggest that
+                   unsupervised discovery of skills can serve as an effective
+                   pretraining mechanism for overcoming challenges of
+                   exploration and data efficiency in reinforcement learning.",
+  month         =  {feb},
+  year          =  {2018},
+  url           = "http://arxiv.org/abs/1802.06070",
+  archivePrefix = "arXiv",
+  eprint        = "1802.06070",
+  primaryClass  = "cs.AI",
+  arxivid       = "1802.06070"
+}
+
+@article{heess2016modulate,
+    author    = {N. Heess and
+              G. Wayne and
+              Y. Tassa and
+              T. Lillicrap and
+              M. Riedmiller and
+              D. Silver},
+    title     = {Learning and Transfer of Modulated Locomotor Controllers},
+    journal   = {CoRR},
+    volume    = {abs/1610.05182},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1610.05182},
+}
+
+@article{peng2017deeploco,
+    author = {Peng, X. and Berseth, G. and Yin, K. and {Van De Panne}, M.},
+    doi = {10.1145/3072959.3073602},
+    issn = {07300301},
+    journal = {ACM Transactions on Graphics},
+    number = {4},
+    pages = {1--13},
+    title = {{DeepLoco}},
+    url = {http://dl.acm.org/citation.cfm?doid=3072959.3073602},
+    volume = {36},
+    year = {2017}
+}
+
+@article{rajeswaran2016epopt,
+    author    = {A. Rajeswaran and
+              S. Ghotra and
+              S. Levine and
+              B. Ravindran},
+    title     = {EPOpt: Learning Robust Neural Network Policies Using Model Ensembles},
+    journal   = {CoRR},
+    volume    = {abs/1610.01283},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1610.01283},
+    archivePrefix = {arXiv},
+    eprint    = {1610.01283}
+}
+
+@inproceedings{sadeghi2017cadrl,
+    title={{CAD2RL}: Real Single-Image Flight without a Single Real Image},
+    author={Sadeghi, F. and Levine, S.},
+    booktitle={RSS},
+    year={2017}
+}
+
+@article{peng2017simreal,
+    author    = {X.B. Peng and
+               M. Andrychowicz and
+               W. Zaremba and
+               P. Abbeel},
+    title     = {Sim-to-Real Transfer of Robotic Control with Dynamics Randomization},
+    journal   = {CoRR},
+    volume    = {abs/1710.06537},
+    year      = {2017},
+    url       = {http://arxiv.org/abs/1710.06537},
+    archivePrefix = {arXiv},
+    eprint    = {1710.06537}
+}
+
+
+@article{tzeng2015adaption,
+    author    = {E. Tzeng and
+               C. Devin and
+               J. Hoffman and
+               C. Finn and
+               X. Peng and
+               S. Levine and
+               K. Saenko and
+               T. Darrell},
+    title     = {Towards Adapting Deep Visuomotor Representations from Simulated to
+               Real Environments},
+    journal   = {CoRR},
+    volume    = {abs/1511.07111},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1511.07111},
+    archivePrefix = {arXiv},
+    eprint    = {1511.07111}
+}
+
+@article{rusu2016progressive,
+    author    = {A.A. Rusu and
+               N.C. Rabinowitz and
+               G. Desjardins and
+               H. Soyer and
+               J. Kirkpatrick and
+               K. Kavukcuoglu and
+               R. Pascanu and
+               R. Hadsell},
+    title     = {Progressive Neural Networks},
+    journal   = {CoRR},
+    volume    = {abs/1606.04671},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1606.04671},
+    archivePrefix = {arXiv},
+    eprint    = {1606.04671}
+}
+
+@article{parisotto2015actormimic,
+    author    = {E. Parisotto and
+               J.L. Ba and
+               R. Salakhutdinov},
+    title     = {Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning},
+    journal   = {CoRR},
+    volume    = {abs/1511.06342},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1511.06342},
+    archivePrefix = {arXiv},
+    eprint    = {1511.06342}
+}
+
+@article{rajendran2017adaapt,
+    author    = {J. Rajendran and
+               P. Prasanna and
+               B. Ravindran and
+               M.M. Khapra},
+    title     = {{ADAAPT:} {A} Deep Architecture for Adaptive Policy Transfer from
+               Multiple Sources},
+    journal   = {CoRR},
+    volume    = {abs/1510.02879},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1510.02879},
+    archivePrefix = {arXiv},
+    eprint    = {1510.02879}
+}
+
+@article{schulman2015trpo,
+    author    = {J. Schulman and
+               S. Levine and
+               P. Moritz and
+               M.I. Jordan and
+               P. Abbeel},
+    title     = {Trust Region Policy Optimization},
+    journal   = {CoRR},
+    volume    = {abs/1502.05477},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1502.05477},
+    archivePrefix = {arXiv},
+    eprint    = {1502.05477},
+    timestamp = {Wed, 07 Jun 2017 14:42:34 +0200},
+    biburl    = {https://dblp.org/rec/bib/journals/corr/SchulmanLMJA15},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{pan2010transfer,
+    author={S. J. Pan and Q. Yang},
+    journal={IEEE Transactions on Knowledge and Data Engineering},
+    title={A Survey on Transfer Learning},
+    year={2010},
+    volume={22},
+    number={10},
+    pages={1345-1359},
+    doi={10.1109/TKDE.2009.191},
+    ISSN={1041-4347},
+    month={Oct}
+}
+
+@article{zhang2016modular,
+    author    = {F. Zhang and
+               J. Leitner and
+               B. Upcroft and
+               P.I. Corke},
+    title     = {Vision-Based Reaching Using Modular Deep Networks: from Simulation
+               to the Real World},
+    journal   = {CoRR},
+    volume    = {abs/1610.06781},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1610.06781},
+    archivePrefix = {arXiv},
+    eprint    = {1610.06781},
+    timestamp = {Wed, 07 Jun 2017 14:41:33 +0200},
+    biburl    = {https://dblp.org/rec/bib/journals/corr/ZhangLUC16},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{pastor2012asm,
+    author={P. Pastor and M. Kalakrishnan and L. Righetti and S. Schaal},
+    booktitle={Humanoids},
+    title={Towards Associative Skill Memories},
+    year={2012},
+    volume={},
+    number={},
+    doi={10.1109/HUMANOIDS.2012.6651537},
+    ISSN={2164-0572},
+    month={Nov},
+}
+
+@inproceedings{rueckert2015movprim,
+    author={E. Rueckert and J. Mundo and A. Paraschos and J. Peters and G. Neumann},
+    booktitle={ICRA},
+    title={Extracting low-dimensional control variables for movement primitives},
+    year={2015},
+    volume={},
+    number={},
+    doi={10.1109/ICRA.2015.7139390},
+    ISSN={1050-4729},
+    month={May}
+}
+
+@article{kroemer2016mlp,
+    author    = {O. Kroemer and
+               G.S. Sukhatme},
+    title     = {Learning Relevant Features for Manipulation Skills using Meta-Level
+               Priors},
+    journal   = {CoRR},
+    volume    = {abs/1605.04439},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1605.04439},
+    archivePrefix = {arXiv},
+    eprint    = {1605.04439},
+    timestamp = {Wed, 07 Jun 2017 14:42:29 +0200},
+    biburl    = {https://dblp.org/rec/bib/journals/corr/KroemerS16},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{todorov2012mujoco,
+    booktitle = {IROS},
+    doi = {10.1109/IROS.2012.6386109},
+    isbn = {9781467317375},
+    issn = {21530858},
+    title = {{MuJoCo: A physics engine for model-based control}},
+    year = {2012}
+}
+
+@inproceedings{koenig2004gazebo,
+    author={N. Koenig and A. Howard},
+    booktitle={IROS},
+    title={Design and use paradigms for Gazebo, an open-source multi-robot simulator},
+    year={2004},
+    number={},
+    doi={10.1109/IROS.2004.1389727},
+    ISSN={},
+    month={Sept}
+}
+
+@article{mnih2015dqn,
+    archivePrefix = {arXiv},
+    arxivId = {1312.5602},
+    author = {Mnih, V. and Kavukcuoglu, K. and Silver, D. and Rusu, A.A. and Veness, J. and Bellemare, M.G. and Graves, A. and Riedmiller, M. and Fidjeland, A.K. and Ostrovski, G. and Petersen, S. and Beattie, C. and Sadik, A. and Antonoglou, I. and King, H. and Kumaran, D. and Wierstra, D. and Legg, S. and Hassabis, D.},
+    doi = {10.1038/nature14236},
+    eprint = {1312.5602},
+    isbn = {1476-4687 (Electronic) 0028-0836 (Linking)},
+    issn = {14764687},
+    journal = {Nature},
+    number = {7540},
+    pages = {529--533},
+    pmid = {25719670},
+    title = {{Human-level control through deep reinforcement learning}},
+    url = {https://www.nature.com/nature/journal/v518/n7540/pdf/nature14236.pdf},
+    volume = {518},
+    year = {2015}
+}
+
+@article{lillicrap2015ddpg,
+    author    = {T.P. Lillicrap and
+               J.J. Hunt and
+               A. Pritzel and
+               N. Heess and
+               T. Erez and
+               Y. Tassa and
+               D. Silver and
+               D. Wierstra},
+    title     = {Continuous control with deep reinforcement learning},
+    journal   = {CoRR},
+    volume    = {abs/1509.02971},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1509.02971},
+    archivePrefix = {arXiv},
+    eprint    = {1509.02971},
+    timestamp = {Wed, 07 Jun 2017 14:40:26 +0200},
+    biburl    = {https://dblp.org/rec/bib/journals/corr/LillicrapHPHETS15},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{duan2016benchmark,
+    archivePrefix = {arXiv},
+    arxivId = {1604.06778v2},
+    author = {Duan, Y. and Chen, X. and Schulman, J. and Abbeel, P.},
+    eprint = {1604.06778v2},
+    isbn = {9781510829008},
+    journal = {arXiv},
+    mendeley-groups = {Reinforcement Learning},
+    pages = {14},
+    title = {{Benchmarking Deep Reinforcement Learning for Continuous Control}},
+    url = {https://arxiv.org/pdf/1604.06778.pdf http://arxiv.org/abs/1604.06778},
+    volume = {48},
+    year = {2016}
+}
+
+@article{levine2018robotarmy,
+    author = {S. Levine and P. Pastor and A. Krizhevsky and J. Ibarz and D. Quillen},
+    title ={Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection},
+    journal = {IJRR},
+    volume = {37},
+    number = {4-5},
+    pages = {421-436},
+    year = {2018},
+    doi = {10.1177/0278364917710318},
+    
+    URL = { 
+            https://doi.org/10.1177/0278364917710318
+        
+    },
+    eprint = { 
+            https://doi.org/10.1177/0278364917710318
+        
+    }
+}
+
+@book{drescher1991made,
+  title={Made-up minds: a constructivist approach to artificial intelligence},
+  author={Drescher, G.L.},
+  year={1991},
+  publisher={MIT press}
+}
+
+@inproceedings{andrychowicz2017hindsight,
+  title={Hindsight experience replay},
+  author={Andrychowicz, M. and Wolski, F. and Ray, A. and Schneider, J. and Fong, R. and Welinder, P. and McGrew, B. and Tobin, J. and Abbeel, P. and Zaremba, W.},
+  booktitle={NIPS},
+  year={2017}
+}
+
+@article{levine2016end,
+  title={End-to-end training of deep visuomotor policies},
+  author={Levine, S. and Finn, C. and Darrell, T. and Abbeel, P.},
+  journal={JMLR},
+  volume={17},
+  number={1},
+  pages={1334--1373},
+  year={2016},
+  publisher={JMLR. org}
+}
+
+@ARTICLE{xu2017neural,
+   author = {{Xu}, D. and {Nair}, S. and {Zhu}, Y. and {Gao}, J. and {Garg}, A. and 
+	{Fei-Fei}, L. and {Savarese}, S.},
+    title = "{Neural Task Programming: Learning to Generalize Across Hierarchical Tasks}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1710.01813},
+ primaryClass = "cs.AI",
+ keywords = {Computer Science - Artificial Intelligence, Computer Science - Learning, Computer Science - Robotics},
+     year = {2017},
+    month = {oct},
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv171001813X},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{kaelbling1996reinforcement,
+  title={Reinforcement learning: A survey},
+  author={Kaelbling, L.P. and Littman, M.L. and Moore, A.W.},
+  journal={JAIR},
+  volume={4},
+  pages={237--285},
+  year={1996}
+}
+
+@article{cooper1993paradigm,
+  title={Paradigm shifts in designed instruction: From behaviorism to cognitivism to constructivism},
+  author={Cooper, P.A.},
+  journal={Educational technology},
+  volume={33},
+  number={5},
+  pages={12--19},
+  year={1993},
+  publisher={JSTOR}
+}
+
+@inproceedings{gu2017deep,
+  title={Deep reinforcement learning for robotic manipulation with asynchronous off-policy updates},
+  author={Gu, S. and Holly, E. and Lillicrap, T. and Levine, S.},
+  booktitle={ICRA},
+  year={2017},
+  organization={IEEE}
+}
+
+@ARTICLE{duan2017one,
+  title         = "{One-Shot} Imitation Learning",
+  author        = "Duan, Yan and Andrychowicz, Marcin and Stadie, Bradly C and
+                   Ho, Jonathan and Schneider, Jonas and Sutskever, Ilya and
+                   Abbeel, Pieter and Zaremba, Wojciech",
+  abstract      = "Imitation learning has been commonly applied to solve
+                   different tasks in isolation. This usually requires either
+                   careful feature engineering, or a significant number of
+                   samples. This is far from what we desire: ideally, robots
+                   should be able to learn from very few demonstrations of any
+                   given task, and instantly generalize to new situations of
+                   the same task, without requiring task-specific engineering.
+                   In this paper, we propose a meta-learning framework for
+                   achieving such capability, which we call one-shot imitation
+                   learning. Specifically, we consider the setting where there
+                   is a very large set of tasks, and each task has many
+                   instantiations. For example, a task could be to stack all
+                   blocks on a table into a single tower, another task could be
+                   to place all blocks on a table into two-block towers, etc.
+                   In each case, different instances of the task would consist
+                   of different sets of blocks with different initial states.
+                   At training time, our algorithm is presented with pairs of
+                   demonstrations for a subset of all tasks. A neural net is
+                   trained that takes as input one demonstration and the
+                   current state (which initially is the initial state of the
+                   other demonstration of the pair), and outputs an action with
+                   the goal that the resulting sequence of states and actions
+                   matches as closely as possible with the second
+                   demonstration. At test time, a demonstration of a single
+                   instance of a new task is presented, and the neural net is
+                   expected to perform well on new instances of this new task.
+                   The use of soft attention allows the model to generalize to
+                   conditions and tasks unseen in the training data. We
+                   anticipate that by training this model on a much greater
+                   variety of tasks and settings, we will obtain a general
+                   system that can turn any demonstrations into robust policies
+                   that can accomplish an overwhelming variety of tasks. Videos
+                   available at https://bit.ly/nips2017-oneshot .",
+  month         =  {mar},
+  year          =  {2017},
+  url           = "http://arxiv.org/abs/1703.07326",
+  archivePrefix = "arXiv",
+  eprint        = "1703.07326",
+  primaryClass  = "cs.AI",
+  arxivid       = "1703.07326"
+}
+
+
+@ARTICLE{zhang2018solar,
+  title         = "{SOLAR}: Deep Structured Latent Representations for
+                   {Model-Based} Reinforcement Learning",
+  author        = "Zhang, Marvin and Vikram, Sharad and Smith, Laura and
+                   Abbeel, Pieter and Johnson, Matthew J and Levine, Sergey",
+  abstract      = "Model-based reinforcement learning (RL) methods can be
+                   broadly categorized as global model methods, which depend on
+                   learning models that provide sensible predictions in a wide
+                   range of states, or local model methods, which iteratively
+                   refit simple models that are used for policy improvement.
+                   While predicting future states that will result from the
+                   current actions is difficult, local model methods only
+                   attempt to understand system dynamics in the neighborhood of
+                   the current policy, making it possible to produce local
+                   improvements without ever learning to predict accurately far
+                   into the future. The main idea in this paper is that we can
+                   learn representations that make it easy to retrospectively
+                   infer simple dynamics given the data from the current
+                   policy, thus enabling local models to be used for policy
+                   learning in complex systems. To that end, we focus on
+                   learning representations with probabilistic graphical model
+                   (PGM) structure, which allows us to devise an efficient
+                   local model method that infers dynamics from real-world
+                   rollouts with the PGM as a global prior. We compare our
+                   method to other model-based and model-free RL methods on a
+                   suite of robotics tasks, including manipulation tasks on a
+                   real Sawyer robotic arm directly from camera images. Videos
+                   of our results are available at
+                   https://sites.google.com/view/solar-iclips",
+  month         =  {aug},
+  year          =  {2018},
+  url           = "http://arxiv.org/abs/1808.09105",
+  archivePrefix = "arXiv",
+  eprint        = "1808.09105",
+  primaryClass  = "cs.LG",
+  arxivid       = "1808.09105"
+}
+
+@inproceedings{chebotar-hausman-zhang17icml,
+  title={Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning},
+  author={Chebotar, Y. and Hausman, K. and Zhang, M. and Sukhatme, G. and Schaal, S. and Levine, S.},
+  journal={ICML},
+  year={2017}
+}
+
+@inproceedings{ng2000algorithms,
+  title={Algorithms for inverse reinforcement learning.},
+  author={Ng, A.Y. and Russell, S.J. and others},
+  booktitle={ICML},
+  year={2000}
+}
+
+@article{sutton1999between,
+  title={Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning},
+  author={Sutton, R.S. and Precup, D. and Singh, S.},
+  journal={Artificial Intelligence},
+  volume={112},
+  number={1-2},
+  pages={181--211},
+  year={1999},
+  publisher={Elsevier}
+}
+
+@article{abhishek-meta,
+  author    = {Abhishek Gupta and
+               Russell Mendonca and
+               Yuxuan Liu and
+               Pieter Abbeel and
+               Sergey Levine},
+  title     = {Meta-Reinforcement Learning of Structured Exploration Strategies},
+  journal   = {CoRR},
+  volume    = {abs/1802.07245},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1802.07245},
+  archivePrefix = {arXiv},
+  eprint    = {1802.07245},
+  timestamp = {Mon, 05 Mar 2018 15:37:06 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1802-07245},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{diversity-is-all-you-need,
+  author    = {B. Eysenbach and
+               A. Gupta and
+               J. Ibarz and
+               S. Levine},
+  title     = {Diversity is All You Need: Learning Skills without a Reward Function},
+  journal   = {CoRR},
+  volume    = {abs/1802.06070},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1802.06070},
+  archivePrefix = {arXiv},
+  eprint    = {1802.06070},
+  timestamp = {Thu, 01 Mar 2018 19:20:48 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1802-06070},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{tuomas18latent-hrl,
+  author    = {T. Haarnoja and
+               K. Hartikainen and
+               P. Abbeel and
+               S. Levine},
+  title     = {Latent Space Policies for Hierarchical Reinforcement Learning},
+  journal   = {CoRR},
+  volume    = {abs/1804.02808},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1804.02808},
+  archivePrefix = {arXiv},
+  eprint    = {1804.02808},
+  timestamp = {Tue, 01 May 2018 19:46:29 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1804-02808},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{schulman2017ppo,
+  author    = {John Schulman and
+               Filip Wolski and
+               Prafulla Dhariwal and
+               Alec Radford and
+               Oleg Klimov},
+  title     = {Proximal Policy Optimization Algorithms},
+  journal   = {CoRR},
+  volume    = {abs/1707.06347},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1707.06347},
+  archivePrefix = {arXiv},
+  eprint    = {1707.06347},
+  timestamp = {Mon, 13 Aug 2018 16:47:34 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/SchulmanWDRK17},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{lillicrap2015continuous,
+  title={Continuous control with deep reinforcement learning},
+  author={Lillicrap, Timothy P and Hunt, Jonathan J and Pritzel, Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval and Silver, David and Wierstra, Daan},
+  journal={arXiv preprint arXiv:1509.02971},
+  year={2015}
+}
+
+@article{behaviouralCloning,
+title = "Behavioural Cloning: Phenomena, Results and Problems",
+journal = "IFAC Proceedings Volumes",
+volume = "28",
+number = "21",
+pages = "143 - 149",
+year = "1995",
+note = "5th IFAC Symposium on Automated Systems Based on Human Skill (Joint Design of Technology and Organisation), Berlin, Germany, 26-28 September",
+issn = "1474-6670",
+doi = "https://doi.org/10.1016/S1474-6670(17)46716-4",
+url = "http://www.sciencedirect.com/science/article/pii/S1474667017467164",
+author = "Ivan Bratko and Tanja Urbančič and Claude Sammut",
+keywords = "Machine learning, control system synthesis, human-centered design"
+}
+
+@article{LfDgeneral,
+title = "A survey of robot learning from demonstration",
+journal = "Robotics and Autonomous Systems",
+volume = "57",
+number = "5",
+pages = "469 - 483",
+year = "2009",
+issn = "0921-8890",
+doi = "https://doi.org/10.1016/j.robot.2008.10.024",
+url = "http://www.sciencedirect.com/science/article/pii/S0921889008001772",
+author = "Brenna D. Argall and Sonia Chernova and Manuela Veloso and Brett Browning",
+keywords = "Learning from demonstration, Robotics, Machine learning, Autonomous systems"
+}
